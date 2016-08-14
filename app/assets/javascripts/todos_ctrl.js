@@ -1,5 +1,9 @@
 (function() {
   angular.module('app').controller('todosCtrl', function($scope) {
-    $scope.message = 'hello';
+    $scope.todos = [
+      'Take out the garbage',
+      'Mow the lawn',
+      'Be sure to drink your ovaltine'
+    ];
   });
 })();
