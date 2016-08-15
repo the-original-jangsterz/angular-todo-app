@@ -1,8 +1,16 @@
 <div ng-app="app">
   <div ng-controller="todosCtrl">
+
     <div ng-repeat="todo in todos">
       <p>{{ todo }}</p>
       <input ng-model="todo">
     </div>
+
+    <div>
+      <h3>Add a new task:</h3>
+      <input ng-model="newTodo">
+      <button ng-click="addTodo(newTodo)">Add Task</button>
+    </div>
+
   </div>
 </div>
