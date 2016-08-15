@@ -14,5 +14,9 @@
         $scope.newTodo = '';
       }
     };
+
+    $scope.completeTask = function(inputIndex) {
+      $scope.todos.splice(inputIndex, 1);
+    };
   });
 })();
