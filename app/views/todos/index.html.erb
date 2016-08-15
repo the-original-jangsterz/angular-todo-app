@@ -1,7 +1,7 @@
 <div ng-app="app">
   <div ng-controller="todosCtrl">
 
-    <div ng-repeat="todo in todos" ng-click="completeTask($index)">
+    <div ng-repeat="todo in todos track by $index" ng-click="completeTask($index)">
       <p>{{ todo }}</p>
       <input ng-model="todo">
     </div>
